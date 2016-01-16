@@ -94,7 +94,7 @@ include $(COMPOSER_TEACHER)
 .DEFAULT_GOAL := generate
 
 .PHONY: read fire
-read: generate serve
+read: generate server
 fire: publish deploy
 
 ################################################################################
@@ -113,10 +113,11 @@ override define GIT_DIR_END =
 endef
 
 .PHONY: generate
+generate: subdirs
 generate: HEXO_WORK_DONE
 
-.PHONY: serve
-serve: HEXO_WORK_serve
+.PHONY: server
+server: HEXO_WORK_server
 
 .PHONY: publish
 publish:
