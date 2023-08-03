@@ -1,0 +1,124 @@
+variables:
+  title-prefix: Tresobis
+  site-config:
+    homepage: http://www.tresobis.org
+    brand: null
+    copyright: |
+      <!-- composer >> icon copyright >> -->
+      Copyright (c) 2023, Gary B. Genett
+    composer: 1
+    search_name: |
+      <!-- composer >> icon search >> -->
+    search_site: https://duckduckgo.com
+    search_call: q
+    search_form: |
+      <!-- composer >> form sites tresobis.org >> -->
+      <!-- composer >> form ia web >> -->
+      <!-- composer >> form kae d >> -->
+      <!-- composer >> form ko 1 >> -->
+      <!-- composer >> form kp -1 >> -->
+      <!-- composer >> form kv 1 >> -->
+      <!-- composer >> form kz -1 >> -->
+    header: <composer_root>/_header.md.cms
+    footer: <composer_root>/_footer.md.cms
+    css_shade: custom
+    copy_protect: 1
+    cols_break: md
+    cols_sticky: 1
+    cols_order:
+      - 2
+      - 1
+      - 0
+    cols_reorder:
+      - 0
+      - 1
+      - 0
+    cols_size:
+      - 4
+      - 8
+      - 0
+    cols_resize:
+      - 0
+      - 12
+      - 0
+    metainfo: '<date> :: <title><|> -- <author|; >'
+    metainfo_null: '*(none)*'
+    tagslist:
+      author:
+        title: Author
+        display: '*Authors: <|>, <|>*'
+      tags:
+        title: Tag
+        display: '*Tags: <|>, <|>*'
+    readtime: '*Reading time: <word> words, <time> minutes*'
+    readtime_wpm: 220
+  site-library:
+    folder: null
+    auto_update: null
+    digest_title: Latest Updates
+    digest_continue: '[...]'
+    digest_permalink: '*(permalink to full text)*'
+    digest_header: null
+    digest_footer: null
+    digest_chars: 1024
+    digest_count: 20
+    digest_expanded: 0
+    digest_spacer: 1
+    sitemap_title: Site Map
+    sitemap_expanded: 0
+    sitemap_spacer: null
+    lists_header: null
+    lists_footer: null
+    lists_expanded: null
+    lists_spacer: null
+  site-nav-top:
+    MENU:
+      - Latest: <composer_root>/index.html
+    LIBRARY:
+      - Authors:
+          - library author
+      - Tags:
+          - library tags
+      - History:
+          - library date
+    SPACE:
+      - spacer
+    CONTENTS:
+      - Contents:
+          - contents 0
+  site-nav-bottom:
+    PATH:
+      - Sitemap: <composer_root>/library/sitemap.html
+    INFO:
+      - tagslist author
+  site-nav-left:
+    MENU: null
+    SPACE: null
+    CONTENTS:
+      - box-begin 0 Contents
+      - contents 0
+      - box-end
+    METADATA: null
+  site-nav-right:
+    MENU: null
+    SPACE: null
+    LIBRARY:
+      - fold-begin group fold-library
+      - fold-begin 0 0 fold-library Authors
+      - library author
+      - fold-end
+      - fold-begin 0 0 fold-library Tags
+      - library tags
+      - fold-end
+      - fold-begin 0 0 fold-library History
+      - library date
+      - fold-end
+  site-info-top:
+    TEXT: null
+    INFO: null
+    ICON: null
+  site-info-bottom:
+    TEXT: null
+    INFO:
+      - readtime
+    ICON: null
