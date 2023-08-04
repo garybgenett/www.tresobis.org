@@ -25,6 +25,7 @@ override c_site				:= 1
 
 override c_logo				:= $(COMPOSER_ROOT)/favicon.png
 override c_icon				:= $(COMPOSER_ROOT)/favicon.png
+override c_css				:= custom
 
 ################################################################################
 

@@ -21,7 +21,7 @@ variables:
       <!-- composer >> form kz -1 >> -->
     header: <composer_root>/_header.md.cms
     footer: <composer_root>/_footer.md.cms
-    css_shade: custom
+    css_shade: null
     copy_protect: 1
     cols_break: md
     cols_sticky: 1
