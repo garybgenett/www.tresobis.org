@@ -122,7 +122,7 @@ variables:
     TEXT:
     INFO:
     ICON:
-#>    - icon <composer_root>/../garybgenett/favicon.png author http://www.garybgenett.net Gary B. Genettt
+#>    - icon <composer_root>/../garybgenett/_branding/logo.png author http://www.garybgenett.net Gary B. Genett
 
 ########################################
   site-info-bottom:
