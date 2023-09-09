@@ -50,6 +50,9 @@ variables:
       tags:
         title: Tag
         display: '*Tags: <|>, <|>*'
+      type:
+        title: Type
+        display: '*Type: <|>, <|>*'
     readtime: '*Reading time: <word> words, <time> minutes*'
     readtime_wpm: 220
   site-library:
