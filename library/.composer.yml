@@ -80,6 +80,8 @@ variables:
     LIBRARY:
       - Authors:
           - library author
+      - Types:
+          - library type
       - Tags:
           - library tags
       - History:
@@ -94,6 +96,7 @@ variables:
       - Sitemap: <composer_root>/library/sitemap.html
     INFO:
       - tagslist author
+      - tagslist type
   site-nav-left:
     MENU: null
     SPACE: null
@@ -109,6 +112,9 @@ variables:
       - fold-begin group fold-library
       - fold-begin 0 0 fold-library Authors
       - library author
+      - fold-end
+      - fold-begin 0 0 fold-library Types
+      - library type
       - fold-end
       - fold-begin 0 0 fold-library Tags
       - library tags
