@@ -40,7 +40,7 @@ variables:
     cols_size:				[ 4, 8, 0 ]
     cols_resize:			[ 0, 12, 0 ]
 
-    tagslist:
+    metalist:
       type:
         title:				"Type"
         display:			"*Type: <|>, <|>*"
@@ -89,9 +89,9 @@ variables:
     PATH:
       - Sitemap:			<composer_root>/library/sitemap.html
     INFO:
-      - tagslist author
-      - tagslist type
-#>    - tagslist tags
+      - metalist author
+      - metalist type
+#>    - metalist tags
 
 ########################################
   site-nav-left:
@@ -104,9 +104,9 @@ variables:
       - box-end
     METADATA:
 #>    - spacer
-#>    - tagslist author
-#>    - tagslist type
-#>    - tagslist tags
+#>    - metalist author
+#>    - metalist type
+#>    - metalist tags
 #>    - readtime
 
 ########################################
