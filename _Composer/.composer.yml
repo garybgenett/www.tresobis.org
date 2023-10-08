@@ -65,7 +65,7 @@ variables:
       - Latest:				<composer_root>/index.html
 #>  CONTENTS:
 #>    - Contents:
-#>      - contents 0
+#>      - contents
 #>  SPACE:
 #>    - spacer
     LIBRARY:
@@ -81,7 +81,7 @@ variables:
       - spacer
     CONTENTS:
       - Contents:
-        - contents 0
+        - contents
 
 ########################################
   site-nav-bottom:
@@ -100,7 +100,7 @@ variables:
     SPACE:
     CONTENTS:
       - box-begin 0 Contents
-      - contents 0
+      - contents
       - box-end
     METADATA:
 #>    - spacer
