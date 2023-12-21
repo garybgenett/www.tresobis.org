@@ -30,8 +30,8 @@ variables:
     header:				<composer_root>/_header.md.cms
     footer:				<composer_root>/_footer.md.cms
 
-#>  css_shade:				custom
-    css_shade:				null
+#>  css_overlay:			custom
+    css_overlay:			null
     copy_protect:			1
 
     cols_break:				md
@@ -53,10 +53,10 @@ variables:
 
     digest_count:			20
 
-    sitemap_spacer:			null
-
     lists_expanded:			null
     lists_spacer:			null
+
+    sitemap_spacer:			null
 
 ########################################
   site-nav-top:

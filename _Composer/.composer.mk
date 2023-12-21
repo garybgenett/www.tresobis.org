@@ -30,13 +30,6 @@ override c_icon				:= $(COMPOSER_ROOT)/_branding/logo.png
 override c_css				:= custom
 
 ################################################################################
-
-%.html: $(COMPOSER_ROOT)/_header.md.cms
-#>%.html: $(COMPOSER_ROOT)/_header-pages.md.cms
-#>%.html: $(COMPOSER_ROOT)/_footer-pages.md.cms
-%.html: $(COMPOSER_ROOT)/_footer.md.cms
-
-################################################################################
 ifeq ($(COMPOSER_CURDIR),)
 ################################################################################
 
