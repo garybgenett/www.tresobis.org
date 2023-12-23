@@ -9385,11 +9385,42 @@ body {
 min-width:	100%;
 margin:	0px;
 padding:	0px;
-padding-top:	70px;
-padding-bottom:	70px;
+padding-top:	60px;
+padding-bottom:	60px;
 }
-.composer-sticky {
-max-height:	85vh;
+
+@media (min-width: 1400px) {
+.composer-scroll-xxl {
+max-height:	calc(100vh - 60px - 60px);
+overflow:	auto;
+}
+}
+@media (min-width: 1200px) {
+.composer-scroll-xl {
+max-height:	calc(100vh - 60px - 60px);
+overflow:	auto;
+}
+}
+@media (min-width: 992px) {
+.composer-scroll-lg {
+max-height:	calc(100vh - 60px - 60px);
+overflow:	auto;
+}
+}
+@media (min-width: 768px) {
+.composer-scroll-md {
+max-height:	calc(100vh - 60px - 60px);
+overflow:	auto;
+}
+}
+@media (min-width: 576px) {
+.composer-scroll-sm {
+max-height:	calc(100vh - 60px - 60px);
+overflow:	auto;
+}
+}
+.composer-scroll {
+max-height:	calc(100vh - 60px - 60px);
 overflow:	auto;
 }
 
@@ -9487,11 +9518,29 @@ width:	auto;
 height:	24px;
 width:	auto;
 }
-.composer-display {
+.composer-display .carousel-control-prev,
+.composer-display .carousel-control-next {
+height:	64px;
+width:	64px;
+opacity:	1;
+}
+.composer-display .carousel-control-prev-icon,
+.composer-display .carousel-control-next-icon {
+height:	32px;
+width:	32px;
+}
+.composer-display .carousel-indicators {
+margin-bottom:	2px;
+}
+.composer-display .carousel-indicators [data-bs-target] {
+height:	6px;
+width:	32px;
+}
+.composer-display-banner {
 height:	auto;
 max-width:	100%;
 }
-.composer-display-item {
+.composer-display-shelf {
 height:	auto;
 max-width:	128px;
 }
@@ -16387,18 +16436,18 @@ margin-top:	0px;
 <!-- site-targets >> .../.composer.tmp/site-cache.404.html.nav-top.html -->
 <!-- site-nav-top :: start >> .../_branding/logo.png -->
 <!-- site-nav-begin :: start >> top .../_branding/logo.png -->
-<div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar-fixed-top">
+<div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#composer-nav-top">
 
 </div>
 <nav class="navbar navbar-expand-md fixed-top">
 <div class="container-fluid">
-<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-fixed-top">
+<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#composer-nav-top">
 <span class="navbar-toggler-icon"></span>
 </button>
 <!-- site-brand :: start >> .../_branding/logo.png -->
 <a class="navbar-brand" href="http://www.tresobis.org"> <img class="composer-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH3wcVCBsNI8+ZeAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAgklEQVQ4y6VSWwoAIQgco4N5dG/m/hTZrqVtA4JR2DwkDChmEBIo9iCtTlBwiepQ9yQt5RAA3dHmYMC1BLJUZf41lUg1l79irCd0RYZbzF+eKq0iY1MMOI4WAGiXgr62U7sMI0XdAYa+sk3JeND7sqIt+1jdRaLosXW+95QwCrtdeQDILSpbBT7A2QAAAABJRU5ErkJggg=="> </a>
 <!-- site-brand :: finish >> .../_branding/logo.png -->
-<div class="navbar-collapse collapse" id="navbar-fixed-top">
+<div class="navbar-collapse collapse" id="composer-nav-top">
 <!-- site-nav-begin :: finish >> top .../_branding/logo.png -->
 <ul class="navbar-nav navbar-nav-scroll me-auto">
 <!-- site-nav-top-list :: start >> nav-top.["MENU"] -->
@@ -16537,7 +16586,7 @@ margin-top:	0px;
 <!-- site-targets >> .../.composer.tmp/site-cache.404.html.nav-left.html -->
 <!-- site-nav-side :: start >> left -->
 <!-- site-column-begin :: start >> left -->
-<div class="d-flex flex-column composer-sticky d-md-sticky d-static order-md-2 order-0 col-md-4 col-0 d-md-block d-none p-2">
+<div id="composer-nav-left" class="d-flex flex-column composer-scroll-md order-md-2 order-0 col-md-4 col-0 d-md-block d-none p-2">
 <!-- site-column-begin :: finish >> left -->
 <!-- site-nav-side-list :: start >> nav-left.["MENU"] -->
 <!-- site-nav-side-list :: finish >> nav-left.["MENU"] -->
@@ -16547,7 +16596,7 @@ margin-top:	0px;
 <!-- site-nav-side-list :: start >> nav-left.["CONTENTS"][0] -->
 <!-- site-box-begin :: start >> 0 Contents -->
 <div class="card">
-<div id="contents" class="card-header">
+<div id="composer-box-contents" class="card-header">
 <h6 class="composer-header">
 Contents
 </h6>
@@ -16573,7 +16622,7 @@ Contents
 <!-- site-nav-side :: finish >> left -->
 <!-- site-targets >> .../.composer.tmp/site-cache.404.html.column-begin.html -->
 <!-- site-column-begin :: start >> center -->
-<div class="d-flex flex-column composer-sticky d-md-sticky d-static order-md-1 order-1 col-md-8 col-12 d-md-block d-block p-2">
+<div id="composer-nav-center" class="d-flex flex-column composer-scroll-md order-md-1 order-1 col-md-8 col-12 d-md-block d-block p-2">
 <!-- site-column-begin :: finish >> center -->
 <!-- site-targets >> .../_header.md.cms -->
 <!-- site-file :: start >> .../_header.md.cms -->
@@ -16582,7 +16631,7 @@ Contents
 <!-- site-file :: start >> 404.md -->
 <!-- site-box-begin :: start >> 0 That's Unfortunate -->
 <div class="card">
-<div id="thats-unfortunate" class="card-header">
+<div id="composer-box-thats-unfortunate" class="card-header">
 <h6 class="composer-header">
 That’s Unfortunate
 </h6>
@@ -16609,7 +16658,7 @@ That’s Unfortunate
 <!-- site-targets >> .../.composer.tmp/site-cache.404.html.nav-right.html -->
 <!-- site-nav-side :: start >> right -->
 <!-- site-column-begin :: start >> right -->
-<div class="d-flex flex-column composer-sticky d-md-sticky d-static order-md-0 order-0 col-md-0 col-0 d-md-none d-none p-2">
+<div id="composer-nav-right" class="d-flex flex-column composer-scroll-md order-md-0 order-0 col-md-0 col-0 d-md-none d-none p-2">
 <!-- site-column-begin :: finish >> right -->
 <!-- site-nav-side-list :: start >> nav-right.["MENU"] -->
 <!-- site-nav-side-list :: finish >> nav-right.["MENU"] -->
@@ -16618,21 +16667,21 @@ That’s Unfortunate
 <!-- site-nav-side-list :: start >> nav-right.["LIBRARY"] -->
 <!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][0] -->
 <!-- site-fold-begin :: start >> group fold-library -->
-<div id="fold-library" class="accordion">
+<div id="composer-fold-group-fold-library" class="accordion">
 <!-- site-fold-begin :: finish >> group fold-library -->
 <!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][0] -->
 <!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][1] -->
 <!-- site-fold-begin :: start >> 0 0 fold-library Authors -->
 <div class="accordion">
 <div class="accordion-item">
-<div id="authors" class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-Authors">
+<div id="composer-fold-authors" class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#composer-fold-authors-target">
 <h6 class="composer-header">
 Authors
 </h6>
 </button>
 </div>
-<div id="toggle-Authors" class="accordion-collapse collapse" data-bs-parent="#fold-library">
+<div id="composer-fold-authors-target" class="accordion-collapse collapse" data-bs-parent="#composer-fold-group-fold-library">
 <div class="accordion-body">
 <!-- site-fold-begin :: finish >> 0 0 fold-library Authors -->
 <!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][1] -->
@@ -16654,14 +16703,14 @@ Authors
 <!-- site-fold-begin :: start >> 0 0 fold-library Types -->
 <div class="accordion">
 <div class="accordion-item">
-<div id="types" class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-Types">
+<div id="composer-fold-types" class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#composer-fold-types-target">
 <h6 class="composer-header">
 Types
 </h6>
 </button>
 </div>
-<div id="toggle-Types" class="accordion-collapse collapse" data-bs-parent="#fold-library">
+<div id="composer-fold-types-target" class="accordion-collapse collapse" data-bs-parent="#composer-fold-group-fold-library">
 <div class="accordion-body">
 <!-- site-fold-begin :: finish >> 0 0 fold-library Types -->
 <!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][4] -->
@@ -16683,14 +16732,14 @@ Types
 <!-- site-fold-begin :: start >> 0 0 fold-library Tags -->
 <div class="accordion">
 <div class="accordion-item">
-<div id="tags" class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-Tags">
+<div id="composer-fold-tags" class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#composer-fold-tags-target">
 <h6 class="composer-header">
 Tags
 </h6>
 </button>
 </div>
-<div id="toggle-Tags" class="accordion-collapse collapse" data-bs-parent="#fold-library">
+<div id="composer-fold-tags-target" class="accordion-collapse collapse" data-bs-parent="#composer-fold-group-fold-library">
 <div class="accordion-body">
 <!-- site-fold-begin :: finish >> 0 0 fold-library Tags -->
 <!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][7] -->
@@ -16712,14 +16761,14 @@ Tags
 <!-- site-fold-begin :: start >> 0 0 fold-library History -->
 <div class="accordion">
 <div class="accordion-item">
-<div id="history" class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-History">
+<div id="composer-fold-history" class="accordion-header">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#composer-fold-history-target">
 <h6 class="composer-header">
 History
 </h6>
 </button>
 </div>
-<div id="toggle-History" class="accordion-collapse collapse" data-bs-parent="#fold-library">
+<div id="composer-fold-history-target" class="accordion-collapse collapse" data-bs-parent="#composer-fold-group-fold-library">
 <div class="accordion-body">
 <!-- site-fold-begin :: finish >> 0 0 fold-library History -->
 <!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][10] -->
@@ -16750,12 +16799,12 @@ History
 <!-- site-targets >> .../.composer.tmp/site-cache.404.html.nav-bottom.html -->
 <!-- site-nav-bottom :: start >> -->
 <!-- site-nav-begin :: start >> bottom -->
-<div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar-fixed-bottom">
+<div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#composer-nav-bottom">
 
 </div>
 <nav class="navbar navbar-expand-md fixed-bottom">
 <div class="container-fluid">
-<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-fixed-bottom">
+<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#composer-nav-bottom">
 <span class="navbar-toggler-icon"></span>
 </button>
 <!-- site-copyright :: start >> -->
@@ -16765,7 +16814,7 @@ History
 <!-- site-icon :: finish >> copyright --> Copyright (c) 2023, Gary B. Genett
 </p>
 <!-- site-copyright :: finish >> -->
-<div class="navbar-collapse collapse" id="navbar-fixed-bottom">
+<div class="navbar-collapse collapse" id="composer-nav-bottom">
 <!-- site-nav-begin :: finish >> bottom -->
 <ol class="composer-link nav-item breadcrumb me-auto">
 <li class="breadcrumb-item">

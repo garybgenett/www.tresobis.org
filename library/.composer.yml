@@ -24,14 +24,7 @@ variables:
     css_overlay: null
     copy_protect: 1
     cols_break: md
-    cols_sticky:
-      - 1
-      - 1
-      - 1
-    cols_resticky:
-      - 0
-      - 0
-      - 0
+    cols_scroll: 1
     cols_order:
       - 2
       - 1
