@@ -8,24 +8,24 @@ variables:
 ########################################
   site-config:
 
-    homepage:				http://www.tresobis.org
     brand:				null
+    homepage:				http://www.tresobis.org
+    search:
+      name: |
+        <!-- composer >> icon search -->
+      site:				https://duckduckgo.com
+      call:				q
+      form: |
+        <!-- composer >> form sites tresobis.org -->
+        <!-- composer >> form ia web -->
+        <!-- composer >> form kae d -->
+        <!-- composer >> form ko 1 -->
+        <!-- composer >> form kp -1 -->
+        <!-- composer >> form kv 1 -->
+        <!-- composer >> form kz -1 -->
     copyright: |
       <!-- composer >> icon copyright -->
       Copyright (c) 2023, Gary B. Genett
-
-    search_name: |
-      <!-- composer >> icon search -->
-    search_site:			https://duckduckgo.com
-    search_call:			q
-    search_form: |
-      <!-- composer >> form sites tresobis.org -->
-      <!-- composer >> form ia web -->
-      <!-- composer >> form kae d -->
-      <!-- composer >> form ko 1 -->
-      <!-- composer >> form kp -1 -->
-      <!-- composer >> form kv 1 -->
-      <!-- composer >> form kz -1 -->
 
     header:				<composer_root>/_header.md.cms
     footer:				<composer_root>/_footer.md.cms
@@ -34,11 +34,11 @@ variables:
     css_overlay:			null
     copy_protect:			1
 
-    cols_break:				md
-    cols_order:				[ 2, 1, 0 ]
-    cols_reorder:			[ 0, 1, 0 ]
-    cols_size:				[ 4, 8, 0 ]
-    cols_resize:			[ 0, 12, 0 ]
+    cols:
+      order:				[ 2, 1, 0 ]
+      reorder:				[ 0, 1, 0 ]
+      size:				[ 4, 8, 0 ]
+      resize:				[ 0, 12, 0 ]
 
     metalist:
       type:
@@ -51,12 +51,15 @@ variables:
     folder:				library
     auto_update:			null #>>> 1
 
-    digest_count:			20
+    digest:
+      count:				20
 
-    lists_expanded:			null
-    lists_spacer:			null
+    lists:
+      expanded:				null
+      spacer:				null
 
-    sitemap_spacer:			null
+    sitemap:
+      spacer:				null
 
 ########################################
   site-nav-top:
@@ -91,7 +94,7 @@ variables:
     INFO:
       - metalist author
       - metalist type
-#>    - metalist tags
+      - metalist tags
 
 ########################################
   site-nav-left:

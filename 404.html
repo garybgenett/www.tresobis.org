@@ -9075,7 +9075,7 @@ background-color:	transparent;
 ::-webkit-scrollbar-thumb {
 background-color:	rgba(var(--bs-secondary-rgb));
 }
-body {
+:root {
 scrollbar-color:	rgba(var(--bs-secondary-rgb)) transparent;
 }
 </style>
@@ -9135,6 +9135,16 @@ border:	var(--composer-bord) solid var(--composer-line);
 background-color:	var(--composer-menu);
 color:	var(--composer-text);
 }
+.composer-display .carousel-control-prev,
+.composer-display .carousel-control-next {
+background-color:	var(--composer-menu);
+border:	var(--composer-bord) solid var(--composer-line);
+}
+.composer-display .carousel-indicators,
+.composer-display .carousel-indicators [data-bs-target] {
+background-color:	var(--composer-menu);
+border:	var(--composer-bord) solid var(--composer-line);
+}
 .composer-link a,
 .composer-link a:active,
 .composer-link a:hover,
@@ -9163,7 +9173,7 @@ background-color:	var(--composer-back);
 ::-webkit-scrollbar-thumb {
 background-color:	var(--composer-line);
 }
-body {
+:root {
 #>>	scrollbar-color:	var(--composer-line) var(--composer-menu);
 scrollbar-color:	var(--composer-line) var(--composer-back);
 }
@@ -9438,7 +9448,7 @@ border-radius:	10px;
 ::-webkit-scrollbar-thumb {
 border-radius:	10px;
 }
-body {
+:root {
 scrollbar-width:	thin;
 }
 
@@ -9520,10 +9530,9 @@ width:	auto;
 }
 .composer-display .carousel-control-prev,
 .composer-display .carousel-control-next {
-background-color:	rgba(var(--bs-secondary-rgb));
 height:	calc(32px + (1px * 2));
 width:	calc(32px + (1px * 2));
-border:	1px solid black;
+border-width:	1px;
 border-radius:	8px;
 margin:	0px;
 opacity:	0.8;
@@ -9535,12 +9544,11 @@ width:	32px;
 }
 .composer-display .carousel-indicators,
 .composer-display .carousel-indicators [data-bs-target] {
-background-color:	rgba(var(--bs-secondary-rgb));
-border:	1px solid black;
+border-width:	1px;
 border-radius:	12px;
 }
 .composer-display .carousel-indicators {
-height:	calc(6px + (1px * 2) + (2px * 2) + (1px * 2));
+height:	calc(6px + (2px * 2) + ((1px * 2) * 2));
 width:	auto;
 margin-left:	20%;
 margin-right:	20%;
@@ -9549,6 +9557,7 @@ opacity:	0.8;
 .composer-display .carousel-indicators [data-bs-target] {
 height:	6px;
 width:	32px;
+border-color:	black;
 margin-top:	2px;
 margin-bottom:	2px;
 opacity:	1;
@@ -16454,13 +16463,13 @@ margin-top:	0px;
   </script>
 </head>
 <body>
-<!-- site-targets >> .../.composer.tmp/site-cache.404.html.nav-top.html -->
+<!-- site-targets >> .../.composer.tmp/site-cache+404.html.nav-top.html -->
 <!-- site-nav-top :: start >> .../_branding/logo.png -->
 <!-- site-nav-begin :: start >> top .../_branding/logo.png -->
 <div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#composer-nav-top">
 
 </div>
-<nav class="navbar navbar-expand-md fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
 <div class="container-fluid">
 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#composer-nav-top">
 <span class="navbar-toggler-icon"></span>
@@ -16482,7 +16491,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Authors</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0].["Authors"] -->
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0].["Authors"][0] -->
 <!-- site-library-shelf :: start >> menu author -->
@@ -16495,7 +16504,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Types</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1].["Types"] -->
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1].["Types"][0] -->
 <!-- site-library-shelf :: start >> menu type -->
@@ -16508,7 +16517,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tags</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2].["Tags"] -->
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2].["Tags"][0] -->
 <!-- site-library-shelf :: start >> menu tags -->
@@ -16521,7 +16530,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">History</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3].["History"] -->
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3].["History"][0] -->
 <!-- site-library-shelf :: start >> menu date -->
@@ -16535,10 +16544,10 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["SPACE"] -->
 <!-- site-nav-top-list :: start >> nav-top.["SPACE"][0] -->
 <!-- site-nav-divider :: start >> top-menu -->
-<li class="composer-menu-div nav-item nav-link d-md-block d-none">
- 
+<li class="composer-menu-div nav-item nav-link d-lg-block d-none">
+<span hidden>…</span>
 </li>
-<li class="nav-item d-md-none d-block">
+<li class="nav-item d-lg-none d-block">
 <hr class="dropdown-divider">
 </li>
 <!-- site-nav-divider :: finish >> top-menu -->
@@ -16548,7 +16557,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contents</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0].["Contents"] -->
 <!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0].["Contents"][0] -->
 <!-- composer >> contents-menu 0 -->
@@ -16562,7 +16571,7 @@ margin-top:	0px;
 <!-- site-nav-end :: start >> top -->
 <!-- site-info-data :: start >> top -->
 <!-- site-nav-divider :: start >> top-info -->
-<p class="navbar-text d-md-none d-block">
+<p class="navbar-text d-lg-none d-block">
 <hr class="dropdown-divider">
 </p>
 <!-- site-nav-divider :: finish >> top-info -->
@@ -16599,15 +16608,15 @@ margin-top:	0px;
 </nav>
 <!-- site-nav-end :: finish >> top -->
 <!-- site-nav-top :: finish >> .../_branding/logo.png -->
-<!-- site-targets >> .../.composer.tmp/site-cache.404.html.row-begin.html -->
+<!-- site-targets >> .../.composer.tmp/site-cache+404.html.row-begin.html -->
 <!-- site-row-begin :: start >> -->
 <div class="container-fluid user-select-none">
 <div class="d-flex flex-row flex-wrap">
 <!-- site-row-begin :: finish >> -->
-<!-- site-targets >> .../.composer.tmp/site-cache.404.html.nav-left.html -->
+<!-- site-targets >> .../.composer.tmp/site-cache+404.html.nav-left.html -->
 <!-- site-nav-side :: start >> left -->
 <!-- site-column-begin :: start >> left -->
-<div id="composer-nav-left" class="d-flex flex-column composer-scroll-md order-md-2 order-0 col-md-4 col-0 d-md-block d-none p-2">
+<div id="composer-nav-left" class="d-flex flex-column composer-scroll-lg order-lg-2 order-0 col-lg-4 col-0 d-lg-block d-none p-2">
 <!-- site-column-begin :: finish >> left -->
 <!-- site-nav-side-list :: start >> nav-left.["MENU"] -->
 <!-- site-nav-side-list :: finish >> nav-left.["MENU"] -->
@@ -16641,9 +16650,9 @@ Contents
 </div>
 <!-- site-column-end :: finish >> -->
 <!-- site-nav-side :: finish >> left -->
-<!-- site-targets >> .../.composer.tmp/site-cache.404.html.column-begin.html -->
+<!-- site-targets >> .../.composer.tmp/site-cache+404.html.column-begin.html -->
 <!-- site-column-begin :: start >> center -->
-<div id="composer-nav-center" class="d-flex flex-column composer-scroll-md order-md-1 order-1 col-md-8 col-12 d-md-block d-block p-2">
+<div id="composer-nav-center" class="d-flex flex-column composer-scroll-lg order-lg-1 order-1 col-lg-8 col-12 d-lg-block d-block p-2">
 <!-- site-column-begin :: finish >> center -->
 <!-- site-targets >> .../_header.md.cms -->
 <!-- site-file :: start >> .../_header.md.cms -->
@@ -16672,14 +16681,14 @@ That’s Unfortunate
 <hr />
 <p><em>None of the content on this site or on our linked websites was generated by (AI) artificial intelligence. We do our own work and express our own thoughts.</em></p>
 <!-- site-file :: finish >> .../_footer.md.cms -->
-<!-- site-targets >> .../.composer.tmp/site-cache.404.html.column-end.html -->
+<!-- site-targets >> .../.composer.tmp/site-cache+404.html.column-end.html -->
 <!-- site-column-end :: start >> -->
 </div>
 <!-- site-column-end :: finish >> -->
-<!-- site-targets >> .../.composer.tmp/site-cache.404.html.nav-right.html -->
+<!-- site-targets >> .../.composer.tmp/site-cache+404.html.nav-right.html -->
 <!-- site-nav-side :: start >> right -->
 <!-- site-column-begin :: start >> right -->
-<div id="composer-nav-right" class="d-flex flex-column composer-scroll-md order-md-0 order-0 col-md-0 col-0 d-md-none d-none p-2">
+<div id="composer-nav-right" class="d-flex flex-column composer-scroll-lg order-lg-0 order-0 col-lg-0 col-0 d-lg-none d-none p-2">
 <!-- site-column-begin :: finish >> right -->
 <!-- site-nav-side-list :: start >> nav-right.["MENU"] -->
 <!-- site-nav-side-list :: finish >> nav-right.["MENU"] -->
@@ -16812,18 +16821,18 @@ History
 </div>
 <!-- site-column-end :: finish >> -->
 <!-- site-nav-side :: finish >> right -->
-<!-- site-targets >> .../.composer.tmp/site-cache.404.html.row-end.html -->
+<!-- site-targets >> .../.composer.tmp/site-cache+404.html.row-end.html -->
 <!-- site-row-end :: start >> -->
 </div>
 </div>
 <!-- site-row-end :: finish >> -->
-<!-- site-targets >> .../.composer.tmp/site-cache.404.html.nav-bottom.html -->
+<!-- site-targets >> .../.composer.tmp/site-cache+404.html.nav-bottom.html -->
 <!-- site-nav-bottom :: start >> -->
 <!-- site-nav-begin :: start >> bottom -->
 <div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#composer-nav-bottom">
 
 </div>
-<nav class="navbar navbar-expand-md fixed-bottom">
+<nav class="navbar navbar-expand-lg fixed-bottom">
 <div class="container-fluid">
 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#composer-nav-bottom">
 <span class="navbar-toggler-icon"></span>
@@ -16839,7 +16848,7 @@ History
 <!-- site-nav-begin :: finish >> bottom -->
 <ol class="composer-link nav-item breadcrumb me-auto">
 <li class="breadcrumb-item">
- 
+<span hidden>…</span>
 </li>
 <!-- site-nav-bottom-list :: start >> nav-bottom.["PATH"] -->
 <!-- site-nav-bottom-list :: start >> nav-bottom.["PATH"][0] -->
@@ -16855,15 +16864,18 @@ History
 <!-- site-nav-bottom-list :: start >> nav-bottom.["INFO"][1] -->
 <!-- composer >> metalist-menu type -->
 <!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"][1] -->
+<!-- site-nav-bottom-list :: start >> nav-bottom.["INFO"][2] -->
+<!-- composer >> metalist-menu tags -->
+<!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"][2] -->
 <!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"] -->
 <li class="breadcrumb-item">
- 
+<span hidden>…</span>
 </li>
 </ol>
 <!-- site-nav-end :: start >> bottom -->
 <!-- site-info-data :: start >> bottom -->
 <!-- site-nav-divider :: start >> bottom-info -->
-<p class="navbar-text d-md-none d-block">
+<p class="navbar-text d-lg-none d-block">
 <hr class="dropdown-divider">
 </p>
 <!-- site-nav-divider :: finish >> bottom-info -->

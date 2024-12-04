@@ -5,8 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content />
-  <meta name="dcterms.date" content="2023-12-24" />
-  <title>Tresobis – Latest Updates</title>
+  <title>Tresobis – Moved To: ../library/index.html</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -9076,7 +9075,7 @@ background-color:	transparent;
 ::-webkit-scrollbar-thumb {
 background-color:	rgba(var(--bs-secondary-rgb));
 }
-body {
+:root {
 scrollbar-color:	rgba(var(--bs-secondary-rgb)) transparent;
 }
 </style>
@@ -9136,6 +9135,16 @@ border:	var(--composer-bord) solid var(--composer-line);
 background-color:	var(--composer-menu);
 color:	var(--composer-text);
 }
+.composer-display .carousel-control-prev,
+.composer-display .carousel-control-next {
+background-color:	var(--composer-menu);
+border:	var(--composer-bord) solid var(--composer-line);
+}
+.composer-display .carousel-indicators,
+.composer-display .carousel-indicators [data-bs-target] {
+background-color:	var(--composer-menu);
+border:	var(--composer-bord) solid var(--composer-line);
+}
 .composer-link a,
 .composer-link a:active,
 .composer-link a:hover,
@@ -9164,7 +9173,7 @@ background-color:	var(--composer-back);
 ::-webkit-scrollbar-thumb {
 background-color:	var(--composer-line);
 }
-body {
+:root {
 #>>	scrollbar-color:	var(--composer-line) var(--composer-menu);
 scrollbar-color:	var(--composer-line) var(--composer-back);
 }
@@ -9439,7 +9448,7 @@ border-radius:	10px;
 ::-webkit-scrollbar-thumb {
 border-radius:	10px;
 }
-body {
+:root {
 scrollbar-width:	thin;
 }
 
@@ -9521,10 +9530,9 @@ width:	auto;
 }
 .composer-display .carousel-control-prev,
 .composer-display .carousel-control-next {
-background-color:	rgba(var(--bs-secondary-rgb));
 height:	calc(32px + (1px * 2));
 width:	calc(32px + (1px * 2));
-border:	1px solid black;
+border-width:	1px;
 border-radius:	8px;
 margin:	0px;
 opacity:	0.8;
@@ -9536,12 +9544,11 @@ width:	32px;
 }
 .composer-display .carousel-indicators,
 .composer-display .carousel-indicators [data-bs-target] {
-background-color:	rgba(var(--bs-secondary-rgb));
-border:	1px solid black;
+border-width:	1px;
 border-radius:	12px;
 }
 .composer-display .carousel-indicators {
-height:	calc(6px + (1px * 2) + (2px * 2) + (1px * 2));
+height:	calc(6px + (2px * 2) + ((1px * 2) * 2));
 width:	auto;
 margin-left:	20%;
 margin-right:	20%;
@@ -9550,6 +9557,7 @@ opacity:	0.8;
 .composer-display .carousel-indicators [data-bs-target] {
 height:	6px;
 width:	32px;
+border-color:	black;
 margin-top:	2px;
 margin-bottom:	2px;
 opacity:	1;
@@ -16453,15 +16461,16 @@ margin-top:	0px;
   }));
   //# sourceMappingURL=bootstrap.bundle.js.map
   </script>
+  <meta http-equiv="refresh" content="5; url=../library/index.html" />
 </head>
 <body>
-<!-- site-targets >> .../library/.composer.tmp/site-cache.nav-top.html -->
+<!-- site-targets >> .../2023/.composer.tmp/site-cache+index.html.nav-top.html -->
 <!-- site-nav-top :: start >> .../_branding/logo.png -->
 <!-- site-nav-begin :: start >> top .../_branding/logo.png -->
 <div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#composer-nav-top">
 
 </div>
-<nav class="navbar navbar-expand-md fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
 <div class="container-fluid">
 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#composer-nav-top">
 <span class="navbar-toggler-icon"></span>
@@ -16469,110 +16478,14 @@ margin-top:	0px;
 <!-- site-brand :: start >> .../_branding/logo.png -->
 <a class="navbar-brand" href="http://www.tresobis.org"> <img class="composer-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH3wcVCBsNI8+ZeAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAgklEQVQ4y6VSWwoAIQgco4N5dG/m/hTZrqVtA4JR2DwkDChmEBIo9iCtTlBwiepQ9yQt5RAA3dHmYMC1BLJUZf41lUg1l79irCd0RYZbzF+eKq0iY1MMOI4WAGiXgr62U7sMI0XdAYa+sk3JeND7sqIt+1jdRaLosXW+95QwCrtdeQDILSpbBT7A2QAAAABJRU5ErkJggg=="> </a>
 <!-- site-brand :: finish >> .../_branding/logo.png -->
-<div class="navbar-collapse collapse" id="composer-nav-top">
+<div id="composer-nav-top" class="navbar-collapse collapse">
 <!-- site-nav-begin :: finish >> top .../_branding/logo.png -->
 <ul class="navbar-nav navbar-nav-scroll me-auto">
-<!-- site-nav-top-list :: start >> nav-top.["MENU"] -->
-<!-- site-nav-top-list :: start >> nav-top.["MENU"][0] -->
-<li class="nav-item">
-<a class="nav-link" href="../index.html">Latest</a>
-</li>
-<!-- site-nav-top-list :: finish >> nav-top.["MENU"][0] -->
-<!-- site-nav-top-list :: finish >> nav-top.["MENU"] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0] -->
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Authors</a>
-<ul class="composer-menu-md dropdown-menu">
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0].["Authors"] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0].["Authors"][0] -->
-<!-- site-library-shelf :: start >> menu author -->
-<!-- site-library-shelf :: finish >> menu author -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][0].["Authors"][0] -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][0].["Authors"] -->
-</ul>
-</li>
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][0] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1] -->
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Types</a>
-<ul class="composer-menu-md dropdown-menu">
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1].["Types"] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1].["Types"][0] -->
-<!-- site-library-shelf :: start >> menu type -->
-<!-- site-library-shelf :: finish >> menu type -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][1].["Types"][0] -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][1].["Types"] -->
-</ul>
-</li>
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][1] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2] -->
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tags</a>
-<ul class="composer-menu-md dropdown-menu">
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2].["Tags"] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2].["Tags"][0] -->
-<!-- site-library-shelf :: start >> menu tags -->
-<!-- site-library-shelf :: finish >> menu tags -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][2].["Tags"][0] -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][2].["Tags"] -->
-</ul>
-</li>
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][2] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3] -->
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">History</a>
-<ul class="composer-menu-md dropdown-menu">
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3].["History"] -->
-<!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3].["History"][0] -->
-<!-- site-library-shelf :: start >> menu date -->
-<!-- site-library-shelf :: finish >> menu date -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][3].["History"][0] -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][3].["History"] -->
-</ul>
-</li>
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"][3] -->
-<!-- site-nav-top-list :: finish >> nav-top.["LIBRARY"] -->
-<!-- site-nav-top-list :: start >> nav-top.["SPACE"] -->
-<!-- site-nav-top-list :: start >> nav-top.["SPACE"][0] -->
-<!-- site-nav-divider :: start >> top-menu -->
-<li class="composer-menu-div nav-item nav-link d-md-block d-none">
- 
-</li>
-<li class="nav-item d-md-none d-block">
-<hr class="dropdown-divider">
-</li>
-<!-- site-nav-divider :: finish >> top-menu -->
-<!-- site-nav-top-list :: finish >> nav-top.["SPACE"][0] -->
-<!-- site-nav-top-list :: finish >> nav-top.["SPACE"] -->
-<!-- site-nav-top-list :: start >> nav-top.["CONTENTS"] -->
-<!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0] -->
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contents</a>
-<ul class="composer-menu-md dropdown-menu">
-<!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0].["Contents"] -->
-<!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0].["Contents"][0] -->
-<!-- composer >> contents-menu 0 -->
-<!-- site-nav-top-list :: finish >> nav-top.["CONTENTS"][0].["Contents"][0] -->
-<!-- site-nav-top-list :: finish >> nav-top.["CONTENTS"][0].["Contents"] -->
-</ul>
-</li>
-<!-- site-nav-top-list :: finish >> nav-top.["CONTENTS"][0] -->
-<!-- site-nav-top-list :: finish >> nav-top.["CONTENTS"] -->
+<!-- site-nav-top :: skip >> nav-top -->
 </ul>
 <!-- site-nav-end :: start >> top -->
 <!-- site-info-data :: start >> top -->
-<!-- site-nav-divider :: start >> top-info -->
-<p class="navbar-text d-md-none d-block">
-<hr class="dropdown-divider">
-</p>
-<!-- site-nav-divider :: finish >> top-info -->
-<!-- site-info-data-list :: start >> info-top.["TEXT"] -->
-<!-- site-info-data-list :: finish >> info-top.["TEXT"] -->
-<!-- site-info-data-list :: start >> info-top.["INFO"] -->
-<!-- site-info-data-list :: finish >> info-top.["INFO"] -->
-<!-- site-info-data-list :: start >> info-top.["ICON"] -->
-<!-- site-info-data-list :: finish >> info-top.["ICON"] -->
+<!-- site-info-data :: skip >> info-top -->
 <!-- site-info-data :: finish >> top -->
 <!-- site-search :: start >> -->
 <form class="nav-item d-flex form-inline" action="https://duckduckgo.com">
@@ -16600,223 +16513,43 @@ margin-top:	0px;
 </nav>
 <!-- site-nav-end :: finish >> top -->
 <!-- site-nav-top :: finish >> .../_branding/logo.png -->
-<!-- site-targets >> .../library/.composer.tmp/site-cache.row-begin.html -->
+<!-- site-targets >> .../2023/.composer.tmp/site-cache+index.html.row-begin.html -->
 <!-- site-row-begin :: start >> -->
 <div class="container-fluid user-select-none">
 <div class="d-flex flex-row flex-wrap">
 <!-- site-row-begin :: finish >> -->
-<!-- site-targets >> .../library/.composer.tmp/site-cache.nav-left.html -->
+<!-- site-targets >> .../2023/.composer.tmp/site-cache+index.html.nav-left.html -->
 <!-- site-nav-side :: start >> left -->
-<!-- site-column-begin :: start >> left -->
-<div id="composer-nav-left" class="d-flex flex-column composer-scroll-md order-md-2 order-0 col-md-4 col-0 d-md-block d-none p-2">
-<!-- site-column-begin :: finish >> left -->
-<!-- site-nav-side-list :: start >> nav-left.["MENU"] -->
-<!-- site-nav-side-list :: finish >> nav-left.["MENU"] -->
-<!-- site-nav-side-list :: start >> nav-left.["SPACE"] -->
-<!-- site-nav-side-list :: finish >> nav-left.["SPACE"] -->
-<!-- site-nav-side-list :: start >> nav-left.["CONTENTS"] -->
-<!-- site-nav-side-list :: start >> nav-left.["CONTENTS"][0] -->
-<!-- site-box-begin :: start >> 0 Contents -->
-<div class="card">
-<div id="composer-box-contents" class="card-header">
-<h6 class="composer-header">
-Contents
-</h6>
-</div>
-<div class="card-body">
-<!-- site-box-begin :: finish >> 0 Contents -->
-<!-- site-nav-side-list :: finish >> nav-left.["CONTENTS"][0] -->
-<!-- site-nav-side-list :: start >> nav-left.["CONTENTS"][1] -->
-<!-- composer >> contents-list 0 -->
-<!-- site-nav-side-list :: finish >> nav-left.["CONTENTS"][1] -->
-<!-- site-nav-side-list :: start >> nav-left.["CONTENTS"][2] -->
-<!-- site-box-end :: start >> -->
-</div>
-</div>
-<!-- site-box-end :: finish >> -->
-<!-- site-nav-side-list :: finish >> nav-left.["CONTENTS"][2] -->
-<!-- site-nav-side-list :: finish >> nav-left.["CONTENTS"] -->
-<!-- site-nav-side-list :: start >> nav-left.["METADATA"] -->
-<!-- site-nav-side-list :: finish >> nav-left.["METADATA"] -->
-<!-- site-column-end :: start >> -->
-</div>
-<!-- site-column-end :: finish >> -->
+<!-- site-nav-side :: skip >> nav-left -->
 <!-- site-nav-side :: finish >> left -->
-<!-- site-targets >> .../library/.composer.tmp/site-cache.column-begin.html -->
+<!-- site-targets >> .../2023/.composer.tmp/site-cache+index.html.column-begin.html -->
 <!-- site-column-begin :: start >> center -->
-<div id="composer-nav-center" class="d-flex flex-column composer-scroll-md order-md-1 order-1 col-md-8 col-12 d-md-block d-block p-2">
+<div id="composer-nav-center" class="d-flex flex-column composer-scroll-lg order-lg-1 order-1 col-lg-8 col-12 d-lg-block d-block p-2">
 <!-- site-column-begin :: finish >> center -->
-<!-- site-targets >> .../_header.md.cms -->
-<!-- site-file :: start >> .../_header.md.cms -->
-<!-- site-file :: finish >> .../_header.md.cms -->
-<!-- site-targets >> index.md -->
-<!-- site-file :: start >> index.md -->
-<!-- site-file :: start >> index-include.md.cms -->
-<!-- site-fold-begin :: start >> group library-digest -->
-<div id="composer-fold-group-library-digest" class="accordion">
-<!-- site-fold-begin :: finish >> group library-digest -->
-<!-- site-fold-end :: start >> group -->
-</div>
-<!-- site-fold-end :: finish >> group -->
-<!-- site-file :: finish >> index-include.md.cms -->
-<!-- site-file :: finish >> index.md -->
-<!-- site-targets >> .../_footer.md.cms -->
-<!-- site-file :: start >> .../_footer.md.cms -->
-<hr />
-<p><em>None of the content on this site or on our linked websites was generated by (AI) artificial intelligence. We do our own work and express our own thoughts.</em></p>
-<!-- site-file :: finish >> .../_footer.md.cms -->
-<!-- site-targets >> .../library/.composer.tmp/site-cache.column-end.html -->
+<!-- site-targets >> .../2023/.composer.tmp/export-redirect+index.html.md -->
+<!-- site-file :: start >> .../2023/.composer.tmp/export-redirect+index.html.md -->
+<p><strong>This link has been permanently moved to: <a href="../library/index.html">../library/index.html</a></strong></p>
+<!-- site-file :: finish >> .../2023/.composer.tmp/export-redirect+index.html.md -->
+<!-- site-targets >> .../2023/.composer.tmp/site-cache+index.html.column-end.html -->
 <!-- site-column-end :: start >> -->
 </div>
 <!-- site-column-end :: finish >> -->
-<!-- site-targets >> .../library/.composer.tmp/site-cache.nav-right.html -->
+<!-- site-targets >> .../2023/.composer.tmp/site-cache+index.html.nav-right.html -->
 <!-- site-nav-side :: start >> right -->
-<!-- site-column-begin :: start >> right -->
-<div id="composer-nav-right" class="d-flex flex-column composer-scroll-md order-md-0 order-0 col-md-0 col-0 d-md-none d-none p-2">
-<!-- site-column-begin :: finish >> right -->
-<!-- site-nav-side-list :: start >> nav-right.["MENU"] -->
-<!-- site-nav-side-list :: finish >> nav-right.["MENU"] -->
-<!-- site-nav-side-list :: start >> nav-right.["SPACE"] -->
-<!-- site-nav-side-list :: finish >> nav-right.["SPACE"] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][0] -->
-<!-- site-fold-begin :: start >> group fold-library -->
-<div id="composer-fold-group-fold-library" class="accordion">
-<!-- site-fold-begin :: finish >> group fold-library -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][0] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][1] -->
-<!-- site-fold-begin :: start >> 0 0 fold-library Authors -->
-<div class="accordion">
-<div class="accordion-item">
-<div id="composer-fold-authors" class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#composer-fold-authors-target">
-<h6 class="composer-header">
-Authors
-</h6>
-</button>
-</div>
-<div id="composer-fold-authors-target" class="accordion-collapse collapse" data-bs-parent="#composer-fold-group-fold-library">
-<div class="accordion-body">
-<!-- site-fold-begin :: finish >> 0 0 fold-library Authors -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][1] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][2] -->
-<!-- site-library-shelf :: start >> list author -->
-<table class="composer-table table table-borderless align-top">
-</table>
-<!-- site-library-shelf :: finish >> list author -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][2] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][3] -->
-<!-- site-fold-end :: start >> -->
-</div>
-</div>
-</div>
-</div>
-<!-- site-fold-end :: finish >> -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][3] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][4] -->
-<!-- site-fold-begin :: start >> 0 0 fold-library Types -->
-<div class="accordion">
-<div class="accordion-item">
-<div id="composer-fold-types" class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#composer-fold-types-target">
-<h6 class="composer-header">
-Types
-</h6>
-</button>
-</div>
-<div id="composer-fold-types-target" class="accordion-collapse collapse" data-bs-parent="#composer-fold-group-fold-library">
-<div class="accordion-body">
-<!-- site-fold-begin :: finish >> 0 0 fold-library Types -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][4] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][5] -->
-<!-- site-library-shelf :: start >> list type -->
-<table class="composer-table table table-borderless align-top">
-</table>
-<!-- site-library-shelf :: finish >> list type -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][5] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][6] -->
-<!-- site-fold-end :: start >> -->
-</div>
-</div>
-</div>
-</div>
-<!-- site-fold-end :: finish >> -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][6] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][7] -->
-<!-- site-fold-begin :: start >> 0 0 fold-library Tags -->
-<div class="accordion">
-<div class="accordion-item">
-<div id="composer-fold-tags" class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#composer-fold-tags-target">
-<h6 class="composer-header">
-Tags
-</h6>
-</button>
-</div>
-<div id="composer-fold-tags-target" class="accordion-collapse collapse" data-bs-parent="#composer-fold-group-fold-library">
-<div class="accordion-body">
-<!-- site-fold-begin :: finish >> 0 0 fold-library Tags -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][7] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][8] -->
-<!-- site-library-shelf :: start >> list tags -->
-<table class="composer-table table table-borderless align-top">
-</table>
-<!-- site-library-shelf :: finish >> list tags -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][8] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][9] -->
-<!-- site-fold-end :: start >> -->
-</div>
-</div>
-</div>
-</div>
-<!-- site-fold-end :: finish >> -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][9] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][10] -->
-<!-- site-fold-begin :: start >> 0 0 fold-library History -->
-<div class="accordion">
-<div class="accordion-item">
-<div id="composer-fold-history" class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#composer-fold-history-target">
-<h6 class="composer-header">
-History
-</h6>
-</button>
-</div>
-<div id="composer-fold-history-target" class="accordion-collapse collapse" data-bs-parent="#composer-fold-group-fold-library">
-<div class="accordion-body">
-<!-- site-fold-begin :: finish >> 0 0 fold-library History -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][10] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][11] -->
-<!-- site-library-shelf :: start >> list date -->
-<table class="composer-table table table-borderless align-top">
-</table>
-<!-- site-library-shelf :: finish >> list date -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][11] -->
-<!-- site-nav-side-list :: start >> nav-right.["LIBRARY"][12] -->
-<!-- site-fold-end :: start >> -->
-</div>
-</div>
-</div>
-</div>
-<!-- site-fold-end :: finish >> -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"][12] -->
-<!-- site-nav-side-list :: finish >> nav-right.["LIBRARY"] -->
-<!-- site-column-end :: start >> -->
-</div>
-<!-- site-column-end :: finish >> -->
+<!-- site-nav-side :: skip >> nav-right -->
 <!-- site-nav-side :: finish >> right -->
-<!-- site-targets >> .../library/.composer.tmp/site-cache.row-end.html -->
+<!-- site-targets >> .../2023/.composer.tmp/site-cache+index.html.row-end.html -->
 <!-- site-row-end :: start >> -->
 </div>
 </div>
 <!-- site-row-end :: finish >> -->
-<!-- site-targets >> .../library/.composer.tmp/site-cache.nav-bottom.html -->
+<!-- site-targets >> .../2023/.composer.tmp/site-cache+index.html.nav-bottom.html -->
 <!-- site-nav-bottom :: start >> -->
 <!-- site-nav-begin :: start >> bottom -->
 <div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#composer-nav-bottom">
 
 </div>
-<nav class="navbar navbar-expand-md fixed-bottom">
+<nav class="navbar navbar-expand-lg fixed-bottom">
 <div class="container-fluid">
 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#composer-nav-bottom">
 <span class="navbar-toggler-icon"></span>
@@ -16828,50 +16561,14 @@ History
 <!-- site-icon :: finish >> copyright --> Copyright (c) 2023, Gary B. Genett
 </p>
 <!-- site-copyright :: finish >> -->
-<div class="navbar-collapse collapse" id="composer-nav-bottom">
+<div id="composer-nav-bottom" class="navbar-collapse collapse">
 <!-- site-nav-begin :: finish >> bottom -->
 <ol class="composer-link nav-item breadcrumb me-auto">
-<li class="breadcrumb-item">
- 
-</li>
-<!-- site-nav-bottom-list :: start >> nav-bottom.["PATH"] -->
-<!-- site-nav-bottom-list :: start >> nav-bottom.["PATH"][0] -->
-<li class="breadcrumb-item">
-<a href="../library/sitemap.html">Sitemap</a>
-</li>
-<!-- site-nav-bottom-list :: finish >> nav-bottom.["PATH"][0] -->
-<!-- site-nav-bottom-list :: finish >> nav-bottom.["PATH"] -->
-<!-- site-nav-bottom-list :: start >> nav-bottom.["INFO"] -->
-<!-- site-nav-bottom-list :: start >> nav-bottom.["INFO"][0] -->
-<!-- composer >> metalist-menu author -->
-<!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"][0] -->
-<!-- site-nav-bottom-list :: start >> nav-bottom.["INFO"][1] -->
-<!-- composer >> metalist-menu type -->
-<!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"][1] -->
-<!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"] -->
-<li class="breadcrumb-item">
- 
-</li>
+<!-- site-nav-bottom :: skip >> nav-bottom -->
 </ol>
 <!-- site-nav-end :: start >> bottom -->
 <!-- site-info-data :: start >> bottom -->
-<!-- site-nav-divider :: start >> bottom-info -->
-<p class="navbar-text d-md-none d-block">
-<hr class="dropdown-divider">
-</p>
-<!-- site-nav-divider :: finish >> bottom-info -->
-<!-- site-info-data-list :: start >> info-bottom.["TEXT"] -->
-<!-- site-info-data-list :: finish >> info-bottom.["TEXT"] -->
-<!-- site-info-data-list :: start >> info-bottom.["INFO"] -->
-<!-- site-info-data-list :: start >> info-bottom.["INFO"][0] -->
-<p class="composer-link navbar-text me-3">
-<!-- composer >> readtime-list -->
-<em>Reading time: 0 words, 1 minutes</em>
-</p>
-<!-- site-info-data-list :: finish >> info-bottom.["INFO"][0] -->
-<!-- site-info-data-list :: finish >> info-bottom.["INFO"] -->
-<!-- site-info-data-list :: start >> info-bottom.["ICON"] -->
-<!-- site-info-data-list :: finish >> info-bottom.["ICON"] -->
+<!-- site-info-data :: skip >> info-bottom -->
 <!-- site-info-data :: finish >> bottom -->
 <p class="composer-link navbar-text me-1">
 :: <a href="http://www.garybgenett.net/projects/composer">Composed with Composer CMS</a>

@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content />
-  <meta name="dcterms.date" content="2023-12-24" />
+  <meta name="dcterms.date" content="2024-12-04" />
   <title>Tresobis – Site Map</title>
   <style>
     code{white-space: pre-wrap;}
@@ -9076,7 +9076,7 @@ background-color:	transparent;
 ::-webkit-scrollbar-thumb {
 background-color:	rgba(var(--bs-secondary-rgb));
 }
-body {
+:root {
 scrollbar-color:	rgba(var(--bs-secondary-rgb)) transparent;
 }
 </style>
@@ -9136,6 +9136,16 @@ border:	var(--composer-bord) solid var(--composer-line);
 background-color:	var(--composer-menu);
 color:	var(--composer-text);
 }
+.composer-display .carousel-control-prev,
+.composer-display .carousel-control-next {
+background-color:	var(--composer-menu);
+border:	var(--composer-bord) solid var(--composer-line);
+}
+.composer-display .carousel-indicators,
+.composer-display .carousel-indicators [data-bs-target] {
+background-color:	var(--composer-menu);
+border:	var(--composer-bord) solid var(--composer-line);
+}
 .composer-link a,
 .composer-link a:active,
 .composer-link a:hover,
@@ -9164,7 +9174,7 @@ background-color:	var(--composer-back);
 ::-webkit-scrollbar-thumb {
 background-color:	var(--composer-line);
 }
-body {
+:root {
 #>>	scrollbar-color:	var(--composer-line) var(--composer-menu);
 scrollbar-color:	var(--composer-line) var(--composer-back);
 }
@@ -9439,7 +9449,7 @@ border-radius:	10px;
 ::-webkit-scrollbar-thumb {
 border-radius:	10px;
 }
-body {
+:root {
 scrollbar-width:	thin;
 }
 
@@ -9521,10 +9531,9 @@ width:	auto;
 }
 .composer-display .carousel-control-prev,
 .composer-display .carousel-control-next {
-background-color:	rgba(var(--bs-secondary-rgb));
 height:	calc(32px + (1px * 2));
 width:	calc(32px + (1px * 2));
-border:	1px solid black;
+border-width:	1px;
 border-radius:	8px;
 margin:	0px;
 opacity:	0.8;
@@ -9536,12 +9545,11 @@ width:	32px;
 }
 .composer-display .carousel-indicators,
 .composer-display .carousel-indicators [data-bs-target] {
-background-color:	rgba(var(--bs-secondary-rgb));
-border:	1px solid black;
+border-width:	1px;
 border-radius:	12px;
 }
 .composer-display .carousel-indicators {
-height:	calc(6px + (1px * 2) + (2px * 2) + (1px * 2));
+height:	calc(6px + (2px * 2) + ((1px * 2) * 2));
 width:	auto;
 margin-left:	20%;
 margin-right:	20%;
@@ -9550,6 +9558,7 @@ opacity:	0.8;
 .composer-display .carousel-indicators [data-bs-target] {
 height:	6px;
 width:	32px;
+border-color:	black;
 margin-top:	2px;
 margin-bottom:	2px;
 opacity:	1;
@@ -16461,7 +16470,7 @@ margin-top:	0px;
 <div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#composer-nav-top">
 
 </div>
-<nav class="navbar navbar-expand-md fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
 <div class="container-fluid">
 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#composer-nav-top">
 <span class="navbar-toggler-icon"></span>
@@ -16483,7 +16492,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Authors</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0].["Authors"] -->
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][0].["Authors"][0] -->
 <!-- site-library-shelf :: start >> menu author -->
@@ -16496,7 +16505,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Types</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1].["Types"] -->
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][1].["Types"][0] -->
 <!-- site-library-shelf :: start >> menu type -->
@@ -16509,7 +16518,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tags</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2].["Tags"] -->
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][2].["Tags"][0] -->
 <!-- site-library-shelf :: start >> menu tags -->
@@ -16522,7 +16531,7 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">History</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3].["History"] -->
 <!-- site-nav-top-list :: start >> nav-top.["LIBRARY"][3].["History"][0] -->
 <!-- site-library-shelf :: start >> menu date -->
@@ -16536,10 +16545,10 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["SPACE"] -->
 <!-- site-nav-top-list :: start >> nav-top.["SPACE"][0] -->
 <!-- site-nav-divider :: start >> top-menu -->
-<li class="composer-menu-div nav-item nav-link d-md-block d-none">
- 
+<li class="composer-menu-div nav-item nav-link d-lg-block d-none">
+<span hidden>…</span>
 </li>
-<li class="nav-item d-md-none d-block">
+<li class="nav-item d-lg-none d-block">
 <hr class="dropdown-divider">
 </li>
 <!-- site-nav-divider :: finish >> top-menu -->
@@ -16549,12 +16558,12 @@ margin-top:	0px;
 <!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0] -->
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contents</a>
-<ul class="composer-menu-md dropdown-menu">
+<ul class="composer-menu-lg dropdown-menu">
 <!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0].["Contents"] -->
 <!-- site-nav-top-list :: start >> nav-top.["CONTENTS"][0].["Contents"][0] -->
 <!-- composer >> contents-menu 0 -->
 <li>
-<a href="#" class="dropdown-item">/</a>
+<a href="#/" class="dropdown-item">/</a>
 </li>
 <li>
 <a href="#2023" class="dropdown-item">2023</a>
@@ -16575,7 +16584,7 @@ margin-top:	0px;
 <!-- site-nav-end :: start >> top -->
 <!-- site-info-data :: start >> top -->
 <!-- site-nav-divider :: start >> top-info -->
-<p class="navbar-text d-md-none d-block">
+<p class="navbar-text d-lg-none d-block">
 <hr class="dropdown-divider">
 </p>
 <!-- site-nav-divider :: finish >> top-info -->
@@ -16620,7 +16629,7 @@ margin-top:	0px;
 <!-- site-targets >> .../library/.composer.tmp/site-cache.nav-left.html -->
 <!-- site-nav-side :: start >> left -->
 <!-- site-column-begin :: start >> left -->
-<div id="composer-nav-left" class="d-flex flex-column composer-scroll-md order-md-2 order-0 col-md-4 col-0 d-md-block d-none p-2">
+<div id="composer-nav-left" class="d-flex flex-column composer-scroll-lg order-lg-2 order-0 col-lg-4 col-0 d-lg-block d-none p-2">
 <!-- site-column-begin :: finish >> left -->
 <!-- site-nav-side-list :: start >> nav-left.["MENU"] -->
 <!-- site-nav-side-list :: finish >> nav-left.["MENU"] -->
@@ -16641,7 +16650,7 @@ Contents
 <!-- site-nav-side-list :: start >> nav-left.["CONTENTS"][1] -->
 <!-- composer >> contents-list 0 -->
 <ul>
-<li><a href="#">/</a></li>
+<li><a href="#/">/</a></li>
 <li><a href="#2023">2023</a></li>
 <li><a href="#_composer">_Composer</a></li>
 <li><a href="#library">library</a></li>
@@ -16662,7 +16671,7 @@ Contents
 <!-- site-nav-side :: finish >> left -->
 <!-- site-targets >> .../library/.composer.tmp/site-cache.column-begin.html -->
 <!-- site-column-begin :: start >> center -->
-<div id="composer-nav-center" class="d-flex flex-column composer-scroll-md order-md-1 order-1 col-md-8 col-12 d-md-block d-block p-2">
+<div id="composer-nav-center" class="d-flex flex-column composer-scroll-lg order-lg-1 order-1 col-lg-8 col-12 d-lg-block d-block p-2">
 <!-- site-column-begin :: finish >> center -->
 <!-- site-targets >> .../_header.md.cms -->
 <!-- site-file :: start >> .../_header.md.cms -->
@@ -16673,9 +16682,9 @@ Contents
 <!-- site-fold-begin :: start >> group library-sitemap -->
 <div id="composer-fold-group-library-sitemap" class="accordion">
 <!-- site-fold-begin :: finish >> group library-sitemap -->
-<!-- site-fold-begin :: start >> 1 . sitemap-list / -->
+<!-- site-fold-begin :: start >> 1 . library-sitemap / -->
 <!-- site-header :: start >> 1 / -->
-<div>
+<div id="/">
 
 </div>
 <!-- site-header :: finish >> 1 / -->
@@ -16688,15 +16697,32 @@ Contents
 </h1>
 </button>
 </div>
-<div id="composer-fold--target" class="accordion-collapse collapse show" data-bs-parent="#composer-fold-group-sitemap-list">
+<div id="composer-fold--target" class="accordion-collapse collapse show" data-bs-parent="#composer-fold-group-library-sitemap">
 <div class="accordion-body">
-<!-- site-fold-begin :: finish >> 1 . sitemap-list / -->
+<!-- site-fold-begin :: finish >> 1 . library-sitemap / -->
+<!-- site-file :: start >> ../library/sitemap-+.md.cms -->
 <table class="composer-table table table-borderless align-top">
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="odd">
+<td style="text-align: left;">
+–
+</td>
+<td style="text-align: left;">
+<a href="../.composer-pages.mk">.composer-pages.mk</a>
+</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">
+–
+</td>
+<td style="text-align: left;">
+<a href="../.composer-pages.yml">.composer-pages.yml</a>
+</td>
+</tr>
 <tr class="odd">
 <td style="text-align: left;">
 –
@@ -16715,7 +16741,7 @@ Contents
 </tr>
 <tr class="odd">
 <td style="text-align: left;">
-<em>(none)</em> :: Not Found – <em>(none)</em>
+<em>(none)</em> :: Not Found<span hidden>…</span> – <em>(none)</em>
 </td>
 <td style="text-align: left;">
 <a href="../404.html">404.html</a>
@@ -16739,26 +16765,10 @@ Contents
 </tr>
 <tr class="even">
 <td style="text-align: left;">
-<em>(none)</em> :: A Writing Collective – <em>(none)</em>
-</td>
-<td style="text-align: left;">
-<a href="../index.html">index.html</a>
-</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">
 –
 </td>
 <td style="text-align: left;">
-<a href="../.composer-pages.mk">.composer-pages.mk</a>
-</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">
-–
-</td>
-<td style="text-align: left;">
-<a href="../.composer-pages.yml">.composer-pages.yml</a>
+<a href="../_footer-pages.md.cms">_footer-pages.md.cms</a>
 </td>
 </tr>
 <tr class="odd">
@@ -16774,7 +16784,7 @@ Contents
 –
 </td>
 <td style="text-align: left;">
-<a href="../_footer-pages.md.cms">_footer-pages.md.cms</a>
+<a href="../_header-pages.md.cms">_header-pages.md.cms</a>
 </td>
 </tr>
 <tr class="odd">
@@ -16787,21 +16797,22 @@ Contents
 </tr>
 <tr class="even">
 <td style="text-align: left;">
-–
+<em>(none)</em> :: A Writing Collective<span hidden>…</span> – <em>(none)</em>
 </td>
 <td style="text-align: left;">
-<a href="../_header-pages.md.cms">_header-pages.md.cms</a>
+<a href="../index.html">index.html</a>
 </td>
 </tr>
 </tbody>
 </table>
+<!-- site-file :: finish >> ../library/sitemap-+.md.cms -->
 <!-- site-fold-end :: start >> -->
 </div>
 </div>
 </div>
 </div>
 <!-- site-fold-end :: finish >> -->
-<!-- site-fold-begin :: start >> 1 . sitemap-list 2023 -->
+<!-- site-fold-begin :: start >> 1 . library-sitemap 2023 -->
 <!-- site-header :: start >> 1 2023 -->
 <div id="2023">
 
@@ -16816,9 +16827,10 @@ Contents
 </h1>
 </button>
 </div>
-<div id="composer-fold-2023-target" class="accordion-collapse collapse show" data-bs-parent="#composer-fold-group-sitemap-list">
+<div id="composer-fold-2023-target" class="accordion-collapse collapse show" data-bs-parent="#composer-fold-group-library-sitemap">
 <div class="accordion-body">
-<!-- site-fold-begin :: finish >> 1 . sitemap-list 2023 -->
+<!-- site-fold-begin :: finish >> 1 . library-sitemap 2023 -->
+<!-- site-file :: start >> ../library/sitemap-2023.md.cms -->
 <table class="composer-table table table-borderless align-top">
 <colgroup>
 <col style="width: 50%" />
@@ -16827,37 +16839,38 @@ Contents
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">
-<a href="../.composer-pages.mk">.composer-pages.mk</a>
+–
 </td>
 <td style="text-align: left;">
-<a href="../2023/.composer.mk">.composer.mk</a>
+<a href="../2023/.composer.mk">.composer.mk</a> <em>&gt;&gt;</em> <a href="../.composer-pages.mk">../.composer-pages.mk</a>
 </td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">
-<a href="../.composer-pages.yml">.composer-pages.yml</a>
+–
 </td>
 <td style="text-align: left;">
-<a href="../2023/.composer.yml">.composer.yml</a>
+<a href="../2023/.composer.yml">.composer.yml</a> <em>&gt;&gt;</em> <a href="../.composer-pages.yml">../.composer-pages.yml</a>
 </td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">
-<a href="../library/index.html">library/index.html</a>
+2024-12-04 :: Latest Updates<span hidden>…</span> – <em>(none)</em>
 </td>
 <td style="text-align: left;">
-<a href="../2023/index.html">index.html</a>
+<a href="../2023/index.html">index.html</a> <em>&gt;&gt;</em> <a href="../library/index.html">../library/index.html</a>
 </td>
 </tr>
 </tbody>
 </table>
+<!-- site-file :: finish >> ../library/sitemap-2023.md.cms -->
 <!-- site-fold-end :: start >> -->
 </div>
 </div>
 </div>
 </div>
 <!-- site-fold-end :: finish >> -->
-<!-- site-fold-begin :: start >> 1 . sitemap-list _Composer -->
+<!-- site-fold-begin :: start >> 1 . library-sitemap _Composer -->
 <!-- site-header :: start >> 1 _Composer -->
 <div id="_composer">
 
@@ -16872,9 +16885,10 @@ _Composer
 </h1>
 </button>
 </div>
-<div id="composer-fold-_composer-target" class="accordion-collapse collapse show" data-bs-parent="#composer-fold-group-sitemap-list">
+<div id="composer-fold-_composer-target" class="accordion-collapse collapse show" data-bs-parent="#composer-fold-group-library-sitemap">
 <div class="accordion-body">
-<!-- site-fold-begin :: finish >> 1 . sitemap-list _Composer -->
+<!-- site-fold-begin :: finish >> 1 . library-sitemap _Composer -->
+<!-- site-file :: start >> ../library/sitemap-_Composer.md.cms -->
 <table class="composer-table table table-borderless align-top">
 <colgroup>
 <col style="width: 50%" />
@@ -16883,29 +16897,30 @@ _Composer
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">
-<a href="../.Composer/.composer.mk">.Composer/.composer.mk</a>
+–
 </td>
 <td style="text-align: left;">
-<a href="../_Composer/.composer.mk">.composer.mk</a>
+<a href="../_Composer/.composer.mk">.composer.mk</a> <em>&gt;&gt;</em> <a href="../.Composer/.composer.mk">../.Composer/.composer.mk</a>
 </td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">
-<a href="../.Composer/.composer.yml">.Composer/.composer.yml</a>
+–
 </td>
 <td style="text-align: left;">
-<a href="../_Composer/.composer.yml">.composer.yml</a>
+<a href="../_Composer/.composer.yml">.composer.yml</a> <em>&gt;&gt;</em> <a href="../.Composer/.composer.yml">../.Composer/.composer.yml</a>
 </td>
 </tr>
 </tbody>
 </table>
+<!-- site-file :: finish >> ../library/sitemap-_Composer.md.cms -->
 <!-- site-fold-end :: start >> -->
 </div>
 </div>
 </div>
 </div>
 <!-- site-fold-end :: finish >> -->
-<!-- site-fold-begin :: start >> 1 . sitemap-list library -->
+<!-- site-fold-begin :: start >> 1 . library-sitemap library -->
 <!-- site-header :: start >> 1 library -->
 <div id="library">
 
@@ -16920,9 +16935,10 @@ library
 </h1>
 </button>
 </div>
-<div id="composer-fold-library-target" class="accordion-collapse collapse show" data-bs-parent="#composer-fold-group-sitemap-list">
+<div id="composer-fold-library-target" class="accordion-collapse collapse show" data-bs-parent="#composer-fold-group-library-sitemap">
 <div class="accordion-body">
-<!-- site-fold-begin :: finish >> 1 . sitemap-list library -->
+<!-- site-fold-begin :: finish >> 1 . library-sitemap library -->
+<!-- site-file :: start >> ../library/sitemap-library.md.cms -->
 <table class="composer-table table table-borderless align-top">
 <colgroup>
 <col style="width: 50%" />
@@ -16947,7 +16963,7 @@ library
 </tr>
 <tr class="odd">
 <td style="text-align: left;">
-2023-12-24 :: Latest Updates – <em>(none)</em>
+2024-12-04 :: Latest Updates<span hidden>…</span> – <em>(none)</em>
 </td>
 <td style="text-align: left;">
 <a href="../library/index.html">index.html</a>
@@ -16955,7 +16971,7 @@ library
 </tr>
 <tr class="even">
 <td style="text-align: left;">
-2023-12-24 :: Site Map – <em>(none)</em>
+2024-12-04 :: Site Map<span hidden>…</span> – <em>(none)</em>
 </td>
 <td style="text-align: left;">
 <a href="../library/sitemap.html">sitemap.html</a>
@@ -16963,6 +16979,7 @@ library
 </tr>
 </tbody>
 </table>
+<!-- site-file :: finish >> ../library/sitemap-library.md.cms -->
 <!-- site-fold-end :: start >> -->
 </div>
 </div>
@@ -16986,7 +17003,7 @@ library
 <!-- site-targets >> .../library/.composer.tmp/site-cache.nav-right.html -->
 <!-- site-nav-side :: start >> right -->
 <!-- site-column-begin :: start >> right -->
-<div id="composer-nav-right" class="d-flex flex-column composer-scroll-md order-md-0 order-0 col-md-0 col-0 d-md-none d-none p-2">
+<div id="composer-nav-right" class="d-flex flex-column composer-scroll-lg order-lg-0 order-0 col-lg-0 col-0 d-lg-none d-none p-2">
 <!-- site-column-begin :: finish >> right -->
 <!-- site-nav-side-list :: start >> nav-right.["MENU"] -->
 <!-- site-nav-side-list :: finish >> nav-right.["MENU"] -->
@@ -17130,7 +17147,7 @@ History
 <div class="composer-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#composer-nav-bottom">
 
 </div>
-<nav class="navbar navbar-expand-md fixed-bottom">
+<nav class="navbar navbar-expand-lg fixed-bottom">
 <div class="container-fluid">
 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#composer-nav-bottom">
 <span class="navbar-toggler-icon"></span>
@@ -17146,7 +17163,7 @@ History
 <!-- site-nav-begin :: finish >> bottom -->
 <ol class="composer-link nav-item breadcrumb me-auto">
 <li class="breadcrumb-item">
- 
+<span hidden>…</span>
 </li>
 <!-- site-nav-bottom-list :: start >> nav-bottom.["PATH"] -->
 <!-- site-nav-bottom-list :: start >> nav-bottom.["PATH"][0] -->
@@ -17162,15 +17179,18 @@ History
 <!-- site-nav-bottom-list :: start >> nav-bottom.["INFO"][1] -->
 <!-- composer >> metalist-menu type -->
 <!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"][1] -->
+<!-- site-nav-bottom-list :: start >> nav-bottom.["INFO"][2] -->
+<!-- composer >> metalist-menu tags -->
+<!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"][2] -->
 <!-- site-nav-bottom-list :: finish >> nav-bottom.["INFO"] -->
 <li class="breadcrumb-item">
- 
+<span hidden>…</span>
 </li>
 </ol>
 <!-- site-nav-end :: start >> bottom -->
 <!-- site-info-data :: start >> bottom -->
 <!-- site-nav-divider :: start >> bottom-info -->
-<p class="navbar-text d-md-none d-block">
+<p class="navbar-text d-lg-none d-block">
 <hr class="dropdown-divider">
 </p>
 <!-- site-nav-divider :: finish >> bottom-info -->
@@ -17180,7 +17200,7 @@ History
 <!-- site-info-data-list :: start >> info-bottom.["INFO"][0] -->
 <p class="composer-link navbar-text me-3">
 <!-- composer >> readtime-list -->
-<em>Reading time: 67 words, 1 minutes</em>
+<em>Reading time: 82 words, 1 minutes</em>
 </p>
 <!-- site-info-data-list :: finish >> info-bottom.["INFO"][0] -->
 <!-- site-info-data-list :: finish >> info-bottom.["INFO"] -->
