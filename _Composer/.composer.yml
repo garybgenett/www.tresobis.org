@@ -8,31 +8,32 @@ variables:
 ########################################
   site-config:
 
-    brand:				null
-    homepage:				http://www.tresobis.org
-    search:
-      name: |
-        <!-- composer >> icon search -->
-      site:				https://duckduckgo.com
-      call:				q
-      form: |
-        <!-- composer >> form sites tresobis.org -->
-        <!-- composer >> form ia web -->
-        <!-- composer >> form kae d -->
-        <!-- composer >> form ko 1 -->
-        <!-- composer >> form kp -1 -->
-        <!-- composer >> form kv 1 -->
-        <!-- composer >> form kz -1 -->
-    copyright: |
-      <!-- composer >> icon copyright -->
-      Copyright (c) 2023, Gary B. Genett
+    navbars:
+      brand:				null
+      homepage:				http://www.tresobis.org
+      search:
+        name: |
+          <!-- composer >> icon search -->
+        site:				https://duckduckgo.com
+        call:				q
+        form: |
+          <!-- composer >> form sites tresobis.org -->
+          <!-- composer >> form ia web -->
+          <!-- composer >> form kae d -->
+          <!-- composer >> form ko 1 -->
+          <!-- composer >> form kp -1 -->
+          <!-- composer >> form kv 1 -->
+          <!-- composer >> form kz -1 -->
+      copyright: |
+        <!-- composer >> icon copyright -->
+        Copyright (c) 2023, Gary B. Genett
 
-    header:				<composer_root>/_header.md.cms
-    footer:				<composer_root>/_footer.md.cms
-
-#>  css_overlay:			custom
-    css_overlay:			null
-    copy_protect:			1
+    pages:
+#>    css_overlay:			custom
+      css_overlay:			null
+      copy_protect:			1
+      header:				[ <composer_root>/_header.md.cms ]
+      footer:				[ <composer_root>/_footer.md.cms ]
 
     cols:
       order:				[ 2, 1, 0 ]
@@ -40,16 +41,25 @@ variables:
       size:				[ 4, 8, 0 ]
       resize:				[ 0, 12, 0 ]
 
+########################################
+  site-helpers:
+
     metalist:
+      tags:
+        title:				"Tag: <name>"
+        display:			"Tags: <|>, <|>"
+        empty:				"*(no tags)*"
       type:
-        title:				"Type"
-        display:			"*Type: <|>, <|>*"
+        title:				"Type: <name>"
+        display:			"Types: <|>, <|>"
+        empty:				"*(no types)*"
 
 ########################################
   site-library:
 
-    folder:				library
-    auto_update:			null #>>> 1
+    folder:
+      name:				library
+      auto_update:			null #>>> 1
 
     digest:
       count:				20
