@@ -2,11 +2,11 @@
 # composer settings file
 ################################################################################
 
-override _EXPORT_GIT_REPO		:= ssh://git@github.com/garybgenett/www.tresobis.org.git
-override _EXPORT_GIT_BNCH		:= gh-pages
+override C_EXPORT_GITREPO		:= ssh://git@github.com/garybgenett/www.tresobis.org.git
+override C_EXPORT_GITBNCH		:= gh-pages
 
-override _EXPORT_FIRE_ACCT		:= gary@tresobis.org
-override _EXPORT_FIRE_PROJ		:= tresobis-site
+override C_EXPORT_FIRACCT		:= gary@tresobis.org
+override C_EXPORT_FIRPROJ		:= tresobis-site
 
 ################################################################################
 
